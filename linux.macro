@@ -1,0 +1,20 @@
+;= coreutils, util-linux, procps-ng
+ls=dir /b /ogn $*
+man=help $*
+cat=type $*
+rm=del $*
+mv=move $1 $2
+cp=copy $1 $2
+ps=tasklist $*
+kill=taskkill $*
+poweroff=shutdown /s /t 0 /f
+reboot=shutdown /r /t 0 /f
+clear=cls
+whereis=where $*
+
+lsa=dir /ah $*
+
+;= experimental
+startx=start explorer.exe
+init=taskkill /f /im explorer.exe
+
