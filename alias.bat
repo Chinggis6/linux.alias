@@ -1,4 +1,4 @@
 @echo off
-set alias=.\linux.macro
+set alias=c:\linux.alias\linux.macro
 doskey /macrofile="%alias%"
 set alias=

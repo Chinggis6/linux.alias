@@ -11,6 +11,7 @@ poweroff=shutdown /s /t 0 /f
 reboot=shutdown /r /t 0 /f
 clear=cls
 whereis=where $*
+pwd=cd
 
 lsa=dir /ah $*
 
