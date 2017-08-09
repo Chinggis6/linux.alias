@@ -12,6 +12,11 @@ reboot=shutdown /r /t 0 /f
 clear=cls
 whereis=where $*
 pwd=cd
+grep=find /i $*
+useradd=net user $1 /add
+userdel=net user $1 /del
+passwd=net user %username% *
+ifconfig=ipconfig
 
 lsa=dir /ah $*
 
@@ -19,3 +24,10 @@ lsa=dir /ah $*
 startx=start explorer.exe
 init=taskkill /f /im explorer.exe
 
+;= linux applications
+buku=buku --nc $*
+
+;= custom aliases
+x=exit /b
+xx=exit
+lock= @rundll32 user32.dll,LockWorkStation
