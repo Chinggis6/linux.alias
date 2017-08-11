@@ -6,7 +6,8 @@ rm=del $*
 mv=move $1 $2
 cp=copy $1 $2
 ps=tasklist $*
-kill=taskkill $*
+kill=taskkill /f /im $*
+killall=taskkill /f /t /im $*
 poweroff=shutdown /s /t 0 /f
 reboot=shutdown /r /t 0 /f
 clear=cls
@@ -17,6 +18,7 @@ useradd=net user $1 /add
 userdel=net user $1 /del
 passwd=net user %username% *
 ifconfig=ipconfig
+ll=dir /-b
 
 lsa=dir /ah $*
 
@@ -30,4 +32,5 @@ buku=buku --nc $*
 ;= custom aliases
 x=exit /b
 xx=exit
-lock= @rundll32 user32.dll,LockWorkStation
+lock=@rundll32 user32.dll,LockWorkStation
+env=@rundll32 sysdm.cpl,EditEnvironmentVariables
